@@ -1,0 +1,22 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: search-service
+  data:
+    elasticsearch:
+      cluster-name: elasticsearch
+      cluster-nodes: 192.168.43.13:9300
+  rabbitmq:
+    host: 192.168.43.13
+    username: leyou
+    password: 123456
+    virtual-host: /leyou
+#返回结构不要null属性
+  jackson:
+    default-property-inclusion: non_null
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka
+

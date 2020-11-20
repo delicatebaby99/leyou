@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="leyou-sms" />
+        <module name="leyou-user-interface" />
+        <module name="leyou-user-service" />
+        <module name="ly-auth-common" />
+        <module name="ly-auth-service" />
+        <module name="ly-cart" />
+        <module name="ly-common" />
+        <module name="ly-gateway" />
+        <module name="ly-item-interface" />
+        <module name="ly-item-service" />
+        <module name="ly-order-interface" />
+        <module name="ly-order-service" />
+        <module name="ly-registry" />
+        <module name="ly-search" />
+        <module name="ly-upload" />
+        <module name="ly-web" />
+        <module name="lyupload" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="lyregistry1" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

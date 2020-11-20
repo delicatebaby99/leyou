@@ -1,0 +1,38 @@
+
+server:
+  port: 8089
+spring:
+  application:
+    name: order-service
+  datasource:
+    url: jdbc:mysql:///leyou?useSSL=true&characterEncoding=utf-8&serverTimezone=UTC
+    username: root
+    password: 123456
+  redis:
+    host: 192.168.43.13
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka
+    registry-fetch-interval-seconds: 10
+  instance:
+    prefer-ip-address: true
+    ip-address: 127.0.0.1
+
+
+leyou:
+  jwt:
+    pubKeyPath: C:\\tmp\\rsa\\rsa.pub # 公钥地址
+    cookieName: LY_TOKEN # cookie的名称
+  worker:
+    workerId: 1
+    dataCenterId: 1
+  pay:
+    appId: wx8397f8696b538317 #公众账号ID
+    mchId: 1473426802 #商户号
+    key: T6m9iK73b0kn9g5v426MKfHQH7X8rKwb #生成签名秘钥
+    connectTimeoutMs: 5000 #连接超时时间
+    readTimeoutMs: 10000 #读取超时时间
+    notifyUrl: http://www/leyou.com #下单通知回调地址
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
